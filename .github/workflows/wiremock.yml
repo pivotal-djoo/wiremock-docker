@@ -26,6 +26,11 @@ jobs:
       - name: Download Wiremock Jar
         run: curl https://repo1.maven.org/maven2/com/github/tomakehurst/wiremock-jre8-standalone/2.27.2/wiremock-jre8-standalone-2.27.2.jar -o wiremock.jar
 
+      - name: Print out folder contents
+        run: |
+          ls -la
+          pwd
+
       # Runs a set of commands using the runners shell
       - name: Build a Docker Image
         run: |
